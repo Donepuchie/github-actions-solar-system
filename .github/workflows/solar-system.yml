@@ -15,9 +15,7 @@ jobs:
     unit-testing:
         name: Unit Testing
         runs-on: ubuntu-latest
-        env:
-          MONGO_URI:  ${{ env.MONGO_URI }}
-          MONGO_USERNAME:  ${{ env.MONGO_USERNAME }}
+        
         steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
