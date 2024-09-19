@@ -34,7 +34,7 @@ jobs:
 
           
         - name: Archive Test Result
-          if: ${{ always() }} && steps.demo.conclusion == 'failure' }}
+          if: ${{ always() }}
           uses: actions/upload-artifact@v3
           with:
             name: Mocha-Test-Result
