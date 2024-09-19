@@ -1,6 +1,5 @@
 name: Solar System Workflow
 
-
 on: 
   workflow_dispatch:
   push:
@@ -55,8 +54,7 @@ jobs:
           - name: Install NodeJS dependencies
             run: npm install
 
-          - name: Code-coverage command
-            continue-on-error: true
+          - continue-on-error: true
             run: npm run coverage 
 
           
