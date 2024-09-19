@@ -11,7 +11,7 @@ chai.use(chaiHttp);
 describe('Planets API Suite', () => {
 
     describe('Fetching Planet Details', () => {
-        it('it should fetch a planet named MercurysfsffSD', (done) => {
+        it('it should fetch a planet named Mercury', (done) => {
             let payload = {
                 id: 1
             }
