@@ -81,7 +81,7 @@ jobs:
             with:
               Registry: ghcr.io
               username: Donepuchie
-              password: GITHUB_TOKEN
+              password:  ${{ secrets.API_TOKEN }}
  
           - name: Build and push
             uses: docker/build-push-action@v6
