@@ -62,7 +62,9 @@ jobs:
 
           - continue-on-error: true
             run: npm run coverage 
-
+            needs:
+              - code-coverage
+              - unit-testing
           
           - uses: actions/upload-artifact@v4
             with: 
