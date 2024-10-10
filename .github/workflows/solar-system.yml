@@ -86,5 +86,6 @@ jobs:
           - name: Build and push
             uses: docker/build-push-action@v6
             with:
-              push: true
-              tags: ghcr.io/donepuchie/solar-system:${{github.sha}}
+            context: .
+            push: true
+            tags: 'ghcr.io/${{ github.repository_owner }}/solar-system:${{ github.sha }}'
