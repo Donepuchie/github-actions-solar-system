@@ -12,12 +12,12 @@ env:
       MONGO_PASSWORD:  ${{ secrets.MONGO_PASSWORD }} 
 jobs:
     unit-testing:
-        name: Unit Testing
-        runs-on: ubuntu-latest
-        container:
-          image: node:20
+      name: Unit Testing
+      runs-on: ubuntu-latest
+      container:
+        image: node:20
 
-        steps:
+      steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
     
