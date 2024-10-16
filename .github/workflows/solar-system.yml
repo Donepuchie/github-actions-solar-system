@@ -83,12 +83,12 @@ jobs:
         
           - uses: docker/login-action@v3
             with:
-              Registry: ghcr.io
+              registry: ghcr.io
               username: Donepuchie
               password:  ${{ secrets.API_TOKEN }}
  
           - name: Build and push
-            uses: docker/build-push-action@v6
+            uses: docker/build-push-action@v3
             with:
               push: true
               tags: 'ghcr.io/donepuchie/solar-system:${{github.sha}}'
